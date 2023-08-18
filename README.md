@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Rick and Morty Character Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación web que permite a los usuarios explorar y buscar personajes del mundo de Rick and Morty. La aplicación utiliza React y React Router para manejar la navegación entre diferentes páginas y componentes.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Inicio de Sesión Simulado:** La aplicación tiene un formulario de inicio de sesión que simula el inicio de sesión al verificar las credenciales ingresadas.
 
-### `npm start`
+- **Página de Inicio (Home):** La página de inicio muestra una lista de tarjetas de personajes, cada una con información como el nombre, estado y especie. Los usuarios pueden cerrar tarjetas de personajes específicas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Detalles del Personaje:** Los usuarios pueden hacer clic en una tarjeta de personaje para ver detalles más específicos del personaje, como su género y origen.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Página Acerca de (About):** La página "About" brinda información sobre la aplicación y su propósito.
 
-### `npm test`
+- **Barra de Navegación:** La barra de navegación proporciona enlaces a la página de inicio y a la página Acerca de, y también incluye una barra de búsqueda para buscar personajes por su ID.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Validación:** La aplicación utiliza un archivo de utilidad `validation.js` para validar correos electrónicos y contraseñas ingresados por los usuarios.
 
-### `npm run build`
+## Cómo Usar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clona este repositorio en tu máquina local.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Instala las dependencias usando el siguiente comando: npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Inicia la aplicación usando el siguiente comando: npm start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Accede a la aplicación en tu navegador a través de la URL: http://localhost:3000/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Usa la barra de navegación para explorar la aplicación, iniciar sesión y buscar personajes por ID.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tecnologías Utilizadas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React: Biblioteca de JavaScript para construir interfaces de usuario.
+- React Router: Biblioteca para manejar la navegación en una aplicación de una sola página.
+- axios: Cliente HTTP para realizar solicitudes a la API de Rick and Morty.
 
-## Learn More
+## Notas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Este proyecto es solo una implementación básica y de ejemplo. Siéntete libre de ampliar y mejorar sus funcionalidades según tus necesidades y conocimientos.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+Creado por Luis Gómez R.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
