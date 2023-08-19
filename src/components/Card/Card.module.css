@@ -1,0 +1,19 @@
+/* Estilos para la tarjeta de personaje */
+.Card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    background-color: #b8c6b7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: auto;
+  }
+  
+  .CardImg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Otros estilos específicos de la tarjeta si es necesario */
+  

@@ -1,0 +1,25 @@
+/* Estilos para la barra de navegación */
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #369037;
+    color: #948a8a;
+  }
+  
+  .Nav-button {
+    background-color: transparent;
+    border: none;
+    color: #c6afaf;
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 1rem;
+  }
+  
+  .Nav-button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Otros estilos específicos de la barra de navegación si es necesario */
+  

@@ -1,0 +1,30 @@
+/* Estilos para la barra de búsqueda */
+.SearchBar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .SearchBar input {
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .SearchBar button {
+    padding: 8px 16px;
+
+    background-color: #272a2d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .SearchBar button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Otros estilos específicos de la barra de búsqueda si es necesario */
+  
