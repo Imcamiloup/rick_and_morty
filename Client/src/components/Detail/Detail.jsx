@@ -2,17 +2,21 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Card from '../Card/Card';
 import styles from './Detail.module.css'; // Importa los estilos del módulo
+import axios from 'axios';
 
 export default function Detail({ character, onSearch }) {
   const { id } = useParams();
 
   useEffect(() => {
-    onSearch(id, '');
+    axios.get(`http://localhost:3001/rickandmorty/character/${id}`)
+      .then(response => {
+        onSearch(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
   }, [id]);
 
-  useEffect(() => {
-    console.log(character);
-  }, [character]);
 
   return (
     <div className={styles.DetailContainer}>

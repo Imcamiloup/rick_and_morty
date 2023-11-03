@@ -30,7 +30,7 @@ function App() {
 
    function onSearch(id, string='all') {
       console.log(id, string);
-      axios(`https://rickandmortyapi.com/api/character/${id}`)
+      axios(`http://localhost:3001/rickandmorty/character/${id}`)
       .then(({ data }) => {
          if (data.id) {
             if(string !== 'all'){
