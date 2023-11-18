@@ -1,4 +1,5 @@
 const express = require('express');
+const { conn } = require('./DB_connection');
 const server = express();
 const PORT =3001
 const routes = require('./routes/index');
@@ -23,3 +24,14 @@ server.use("/rickandmorty", routes);
 server.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
+
+conn.sync()
+  .then(() => {
+    console.log('Sequelize sincronizado con la base de datos.');
+    app.listen(PORT, () => {
+      console.log(`Servidor corriendo en el puerto ${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.error('Error al sincronizar Sequelize con la base de datos:', error);
+  });
